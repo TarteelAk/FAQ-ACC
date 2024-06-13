@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+img {
+    width: 25px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 450px;
+    background: url("../images/background-pattern-desktop.svg") no-repeat;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: var(--Light-pink);
+    font-size: 16px;
+    line-height: 1.5; 
+    min-height: 100vh;
+    font-family: 'Work Sans' , sans-serif;
+   
+}
+
+.container{
+    width: calc(100% - 60%);
+    background-color:var(--White);
+   display: block;
+    align-items: center;justify-content: center;
+    border-radius: 8px;
+    padding: 1.5rem;
+    font-size: 15.5px;
+    margin: auto;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap:10px;
+    
+}
+.qustions{
+    font-weight: bold;
+
+}
+.qustions:hover{
+    color: var(--Grayish-purple);
+
+}
+.content{
+    border-bottom: 1px solid #ccc;
+}
+.container:nth-child(5){
+    border-bottom: none;
+}
+.content-close{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.content-open{
+    color: #ccc;
+    margin-bottom: 10px;
+    display: none;
+   
+}
+.minus{
+    display: none;
+}
+.show-text .content-open {
+    display: block;
+    font-size: .765rem;
+    line-height: 1.7;
+    width: 85%;
+    padding-block-end: 1rem;
+  }
+  
+  .show-text .button-img {
+    transform: rotate(180deg);
+  }
+  
+  .show-text .content-close {
+    font-weight: 700;
+  
+  }
+  
+  .show-text .question__title::after {
+    display: none;
+  }
